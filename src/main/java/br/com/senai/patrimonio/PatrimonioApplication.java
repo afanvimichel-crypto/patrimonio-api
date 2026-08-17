@@ -11,6 +11,7 @@ public class PatrimonioApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PatrimonioApplication.class, args);
 
+
 		Empresa empresa = new Empresa();
 		empresa.setRazaoSocial("Senai LTDA");
 		System.out.println(empresa.getRazaoSocial());
