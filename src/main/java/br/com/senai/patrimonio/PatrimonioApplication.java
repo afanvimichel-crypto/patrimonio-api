@@ -30,6 +30,9 @@ public class PatrimonioApplication {
 		System.out.println(endereco.getCidade());
 		System.out.println(endereco.getEstado());
 
+		empresa.setEndereco(endereco);
+		System.out.println(empresa.getEndereco().getRua());
+
 		System.out.println("******************\n");
 		Endereco enderecocomArgumento=new Endereco("Archangelo Meller, ","1432","casa","Mineira Velha","Criciúma",",SC");
 		System.out.print(enderecocomArgumento.getRua());
