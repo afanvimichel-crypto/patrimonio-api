@@ -7,6 +7,7 @@ public class Bloco {
 
     public Bloco(){
 
+
     }
 
     public Bloco(Long id, String nome, Empresa empresa) {
