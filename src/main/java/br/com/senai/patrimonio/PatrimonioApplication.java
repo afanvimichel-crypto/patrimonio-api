@@ -2,6 +2,9 @@ package br.com.senai.patrimonio;
 
 import br.com.senai.patrimonio.model.Empresa;
 import br.com.senai.patrimonio.model.Endereco;
+import br.com.senai.patrimonio.model.Funcionario;
+import br.com.senai.patrimonio.model.Sala;
+import br.com.senai.patrimonio.model.enums.Cargo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -41,6 +44,20 @@ public class PatrimonioApplication {
 		System.out.println(enderecocomArgumento.getBairro());
 		System.out.print(enderecocomArgumento.getCidade());
 		System.out.println(enderecocomArgumento.getEstado());
+
+		Sala sala= new Sala();
+
+		Funcionario funcionario = new Funcionario(35L,"Mariazinha",
+				"123456789", Cargo.GERENTE,empresa,sala
+		);
+
+		System.out.println(funcionario.getCpf());
+		System.out.println(funcionario.getNome());
+		System.out.println(funcionario.getCargo());
+		System.out.println(funcionario.getEmpresa());
+		System.out.println(funcionario.getSalasResponsavel());
+		System.out.println(funcionario.getId());
+
 
 
 	}
