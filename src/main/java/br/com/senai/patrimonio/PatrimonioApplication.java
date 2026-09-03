@@ -1,7 +1,11 @@
 package br.com.senai.patrimonio;
 
+import br.com.senai.patrimonio.avaliacao.Curso;
+import br.com.senai.patrimonio.avaliacao.Evento;
 import br.com.senai.patrimonio.avaliacao.Participante;
+import br.com.senai.patrimonio.avaliacao.Pessoa;
 import br.com.senai.patrimonio.avaliacao.enums.Nivel;
+import br.com.senai.patrimonio.avaliacao.enums.StatusEvento;
 import br.com.senai.patrimonio.model.Empresa;
 import br.com.senai.patrimonio.model.Endereco;
 import br.com.senai.patrimonio.model.Funcionario;
@@ -82,6 +86,42 @@ public class PatrimonioApplication {
 
 		Participante participante= new Participante("Mikelvski","mikilos@gmail.com",
 				"00223344","SE058877", Nivel.AVANCADO);
+		System.out.println("*****************TESTES 1*******************");
+		System.out.println("nome: "+participante.getNome());
+		System.out.println("E-mail: "+participante.getEmail());
+		System.out.println("Telefone: "+participante.getTelefone());
+		System.out.println("Matricula: "+participante.getMatricula());
+		System.out.println("Nivel: "+participante.getNivel());
+
+		System.out.println("\n*******************TESTE 2*************");
+
+		Evento evento= new Evento(2,"Festa de Ferias",
+				"Auditório", StatusEvento.EVENTO_EM_ANDAMENTO,participante);
+
+
+		System.out.println(evento.getCodigo());
+		System.out.println(evento.getNome());
+		System.out.println(evento.getLocal());
+		System.out.println(evento.getStatus());
+		System.out.println(evento.getResponsavel().getNome());
+
+
+		System.out.println("\n************TESTE 3************");
+
+		Curso curso=new Curso(23,"Programaçao de applicativo",
+				"Sala de Aula",
+				StatusEvento.EVENTO_PLANEJADO,participante,120,
+				"prof EZEQUIAS",12);
+
+		System.out.println(curso.getCodigo());
+		System.out.println(curso.getNome());
+		System.out.println(curso.getLocal());
+		System.out.println(curso.getStatus());
+		System.out.println(curso.getResponsavel().getNome());
+		System.out.println(curso.getCargaHoraria());
+		System.out.println(curso.getInstrutor());
+		System.out.println(curso.getQuantidadeVagas());
+
 
 
 
