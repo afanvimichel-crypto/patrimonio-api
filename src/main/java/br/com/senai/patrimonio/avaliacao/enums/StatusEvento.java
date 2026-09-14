@@ -2,7 +2,7 @@ package br.com.senai.patrimonio.avaliacao.enums;
 
 public enum StatusEvento {
     EVENTO_PLANEJADO("Evento Planejado",1),
-    INSCRICAO_ABERTAS("Inscriçao Abertas,",2),
+    INSCRICOES_ABERTAS("Inscriçao Abertas,",2),
     EVENTO_EM_ANDAMENTO("Evento em Andamento",3),
     EVENTO_ENCERRADO("Evento Encerrado",4),
     EVENTO_CANCELADO("Evento cancelado",5);
@@ -10,11 +10,11 @@ public enum StatusEvento {
 
 
     private final String descricao;
-    private final int codigo_numerico;
+    private final int codigo;
 
-    StatusEvento(String descricao, int codigo_numerico) {
+    StatusEvento(String descricao, int codigo) {
         this.descricao = descricao;
-        this.codigo_numerico = codigo_numerico;
+        this.codigo = codigo;
     }
 
     public String getDescricao() {
@@ -22,6 +22,6 @@ public enum StatusEvento {
     }
 
     public int getCodigo_numerico() {
-        return codigo_numerico;
+        return codigo;
     }
 }
