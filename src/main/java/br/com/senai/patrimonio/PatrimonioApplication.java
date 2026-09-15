@@ -3,16 +3,8 @@ package br.com.senai.patrimonio;
 import br.com.senai.patrimonio.avaliacao.Curso;
 import br.com.senai.patrimonio.avaliacao.Evento;
 import br.com.senai.patrimonio.avaliacao.Participante;
-import br.com.senai.patrimonio.avaliacao.Pessoa;
 import br.com.senai.patrimonio.avaliacao.enums.Nivel;
 import br.com.senai.patrimonio.avaliacao.enums.StatusEvento;
-import br.com.senai.patrimonio.model.Empresa;
-import br.com.senai.patrimonio.model.Endereco;
-import br.com.senai.patrimonio.model.Funcionario;
-import br.com.senai.patrimonio.model.Sala;
-import br.com.senai.patrimonio.model.enums.Cargo;
-import br.com.senai.patrimonio.model.enums.Pagamento;
-import br.com.senai.patrimonio.model.enums.PagamentoComposto;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -110,7 +102,7 @@ public class PatrimonioApplication {
 
 		Curso curso=new Curso(23,"Programaçao de applicativo",
 				"Sala de Aula",
-				StatusEvento.EVENTO_PLANEJADO,participante,120,
+				StatusEvento.EVENTO_ENCERRADO,participante,120,
 				"prof EZEQUIAS",12);
 
 		System.out.println(curso.getCodigo());
