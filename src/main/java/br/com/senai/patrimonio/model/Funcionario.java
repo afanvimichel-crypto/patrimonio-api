@@ -7,7 +7,6 @@ public class Funcionario extends Pessoa {
     private Empresa empresa;
     private Sala salasResponsavel;
 
-
     public Funcionario(){}
 
     public Funcionario(Cargo cargo, Empresa empresa, Sala salasResponsavel) {
@@ -16,7 +15,7 @@ public class Funcionario extends Pessoa {
         this.salasResponsavel = salasResponsavel;
     }
 
-    public Funcionario(long id, String nome, String cpf, Cargo cargo, Empresa empresa, Sala salasResponsavel) {
+    public Funcionario(Long id, String nome, String cpf, Cargo cargo, Empresa empresa, Sala salasResponsavel) {
         super(id, nome, cpf);
         this.cargo = cargo;
         this.empresa = empresa;

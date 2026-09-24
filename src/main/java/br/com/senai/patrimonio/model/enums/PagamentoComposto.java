@@ -1,12 +1,12 @@
 package br.com.senai.patrimonio.model.enums;
 
 public enum PagamentoComposto {
-    PIX("Pix","Ativo"),
-    CARTAO_CREDITO("Cartao de Credito","Ativo"),
-    CARTAO_DEBITO("Cartao de Debito","Ativo"),
-    BOLETO("Boleto","Inativo"),
-    PERMUTA("Permuta","Inativo"),
-    DINHEIRO("Dinheiro","Ativo");
+    PIX("Pix", "Ativo"),
+    CARTAO_CREDITO("Cartão de crédito", "Ativo"),
+    CARTAO_DEBITO("Cartão de débito", "Ativo"),
+    BOLETO("Boleto", "Inativo"),
+    PERMUTA("Permuta", "Inativo"),
+    DINHEIRO("Dinheiro", "Ativo");
 
     private final String descricao;
     private final String situacao;

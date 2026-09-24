@@ -4,16 +4,14 @@ public class Bem {
     private Long id;
     private String nome;
     private String codigo;
-    private String placa;
     private Empresa empresa;
 
     public Bem(){}
 
-    public Bem(Long id, String nome, String codigo, String placa, Empresa empresa) {
+    public Bem(Long id, String nome, String codigo, Empresa empresa) {
         this.id = id;
         this.nome = nome;
         this.codigo = codigo;
-        this.placa = placa;
         this.empresa = empresa;
     }
 
@@ -39,14 +37,6 @@ public class Bem {
 
     public void setCodigo(String codigo) {
         this.codigo = codigo;
-    }
-
-    public String getPlaca() {
-        return placa;
-    }
-
-    public void setPlaca(String placa) {
-        this.placa = placa;
     }
 
     public Empresa getEmpresa() {

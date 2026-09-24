@@ -5,10 +5,7 @@ public class Bloco {
     private String nome;
     private Empresa empresa;
 
-    public Bloco(){
-
-
-    }
+    public Bloco (){}
 
     public Bloco(Long id, String nome, Empresa empresa) {
         this.id = id;
@@ -40,4 +37,3 @@ public class Bloco {
         this.empresa = empresa;
     }
 }
-

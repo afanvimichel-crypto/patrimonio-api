@@ -7,7 +7,7 @@ public class Sala {
     private Bloco bloco;
     private Empresa empresa;
 
-    public Sala(){}
+    public Sala() {}
 
     public Sala(Long id, String nome, String qrCode, Bloco bloco, Empresa empresa) {
         this.id = id;

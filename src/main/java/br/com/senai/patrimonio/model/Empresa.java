@@ -1,20 +1,19 @@
 package br.com.senai.patrimonio.model;
 
-import jakarta.persistence.Embeddable;
 import jakarta.persistence.Embedded;
 
 public class Empresa {
-  private Long id;
-  private String nome;
-  private String razaoSocial;
-  private String cnpj;
-  private String contato;
-  private String unidade;
+    private Long id;
+    private String nome;
+    private String razaoSocial;
+    private String cnpj;
+    private String contato;
+    private String unidade;
 
-  @Embedded
-  private Endereco endereco;
+    @Embedded
+    private Endereco endereco;
 
-  public Empresa(){}
+    public Empresa(){}
 
     public Long getId() {
         return id;
